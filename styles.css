@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;
+    background-color: white;
+  }
+  
+  .contenedor-principal {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  .encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+    border-bottom: 1px solid #f0f2f4;
+  }
+  
+  .logo-buscador {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo h2 {
+    color: #111418;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .buscador {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .icono-busqueda {
+    padding: 10px;
+    background-color: #f0f2f4;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .entrada-busqueda {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #f0f2f4;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .iconos {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .icono {
+    padding: 10px;
+    background-color: #f0f2f4;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .imagen-perfil {
+    width: 40px;
+    height: 40px;
+    background-image: url("https://cdn.usegalileo.ai/sdxl10/a4934d7a-7a0b-414b-948f-16ebd4f70f29.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+  }
+  
+  .principal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  
+  .promocion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url("https://cdn.usegalileo.ai/stability/02281aeb-5e89-4b42-99e1-b48d98781e7e.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    min-height: 500px; /* Aumentar la altura mínima */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .promocion h1 {
+    color: white;
+    font-size: 4vw;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  
+  .promocion button {
+    padding: 10px 20px;
+    background-color: #2b76ee;
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .productos, .tendencias {
+    margin-top: 30px;
+  }
+  
+  .productos h2, .tendencias h2 {
+    font-size: 22px;
+    color: #111418;
+    font-weight: bold;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .producto, .producto-tendencia {
+    background-color: #f0f2f4;
+    border-radius: 10px;
+    padding: 15px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Asegura que la imagen no se desborde */
+  }
+  
+  .producto img, .producto-tendencia img {
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .producto-tendencia p {
+    color: #111418;
+    margin: 5px 0;
+  }
+  
+  .imagen-producto {
+    background-color: #dcdcdc;
+    height: 150px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .encabezado {
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+    
+    .principal {
+      padding: 20px;
+    }
+  
+    .promocion h1 {
+      font-size: 6vw;
+    }
+  
+    .galeria {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  
+    .producto-tendencia p {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,96 @@
+/* Font family setup */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Noto+Serif:wght@400;500;700;900&display=swap');
+
+/* General Styles */
+body {
+  font-family: "Noto Serif", "Noto Sans", sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 0;
+  background-color: white;
+}
+
+.title {
+  font-size: 1.125rem;
+  color: #111417;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Main Heading */
+.main-heading {
+  font-size: 1.375rem;
+  color: #111417;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  color: #111417;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.btn {
+  width: 100%;
+  max-width: 480px;
+  height: 40px;
+  background-color: #f0f2f4;
+  color: #111417;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-alt {
+  background-color: transparent;
+  color: #111417;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Terms */
+.terms {
+  font-size: 0.875rem;
+  color: #647587;
+  text-align: center;
+  padding: 16px 0;
+}

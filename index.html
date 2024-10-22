@@ -1,0 +1,395 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Be+Vietnam+Pro%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>Shein</title> <!-- Título del documento -->
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Be Vietnam Pro", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f4] px-10 py-3">
+          <div class="flex items-center gap-8">
+            <div class="flex items-center gap-4 text-[#111418]">
+              <div class="size-4">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">shein</h2>
+            </div>
+            
+            <label class="flex flex-col min-w-40 !h-10 max-w-64">
+              <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+                <div
+                  class="text-[#617189] flex border-none bg-[#f0f2f4] items-center justify-center pl-4 rounded-l-xl border-r-0"
+                  data-icon="MagnifyingGlass"
+                  data-size="24px"
+                  data-weight="regular"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  placeholder="Buscar"
+                  onclick="window.location.href='busqueda.html';"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#111418] focus:outline-0 focus:ring-0 border-none bg-[#f0f2f4] focus:border-none h-full placeholder:text-[#617189] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                  value=""
+                />
+              </div>
+            </label>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex gap-2">
+              <button
+                
+            class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"}
+            onclick="window.location.href='configuracion.html';"
+              >
+                <div class="text-[#111418]" data-icon="Heart" data-size="20px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              
+              <button
+  class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 bg-[#f0f2f4] text-[#111418] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5 relative"
+  onclick="window.location.href='carrito.html';"
+>
+  <div class="text-[#111418]" data-icon="ShoppingBag" data-size="20px" data-weight="regular">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+      <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path>
+    </svg>
+  </div>
+  <!-- Aquí se agregará el puntito rojo -->
+  <span id="cart-notification" class="hidden absolute top-0 right-0 w-3 h-3 bg-red-600 rounded-full"></span>
+</button>
+
+            </div>
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+              style='background-image: url("https://i.pinimg.com/control/564x/f4/8f/ea/f48fea1fc336b10b7d26f9244e366551.jpg");'
+              
+            ></div>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://i.pinimg.com/564x/ff/99/0b/ff990b1fc8ae58954fa6dbfc88757655.jpg");'
+                  
+                >
+                  <h1
+                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] text-center"
+                  >
+                    20% de descuento 
+                  </h1>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#2b76ee] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Comprar ahora</span>
+                  </button>
+                </div>
+                 
+              </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/736x/0a/1d/1e/0a1d1e3ed418f165b70f418fcf20bcc5.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$20</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Oxford Rosa/Difuso Taupe/Marrón Claro Chicle</p>
+                <button 
+                class="agregar-carrito" 
+            data-id="1" 
+            data-nombre="sudadera red" 
+            data-precio="20"
+            data-imagen="https://i.pinimg.com/736x/0a/1d/1e/0a1d1e3ed418f165b70f418fcf20bcc5.jpg">
+                Agregar al carrito
+              </button>
+            </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/564x/95/9e/fa/959efa8e556a7b8cad34eb7d812a8acd.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$30</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">chamarra</p>
+                  <button 
+                  class="agregar-carrito" 
+            data-id="1" 
+            data-nombre="chamarra" 
+            data-precio="30"
+            data-imagen="https://i.pinimg.com/564x/95/9e/fa/959efa8e556a7b8cad34eb7d812a8acd.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/564x/08/b5/fa/08b5fac9adf5eb8b0784559998f52412.jpg");'
+                ></div>
+                 <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$40</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">sudadera adidas</p>
+                  <button 
+                  class="agregar-carrito" 
+                  data-id="1" 
+                  data-nombre="sudadera adidas" 
+                  data-precio="40"
+                  data-imagen="https://i.pinimg.com/564x/08/b5/fa/08b5fac9adf5eb8b0784559998f52412.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/564x/29/9e/d3/299ed3c110b3e92bbe893ca4316e7027.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$180</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">zapatos nike panda</p>
+                  <button 
+                  class="agregar-carrito" 
+                  data-id="1" 
+                  data-nombre="zapatos nike panda" 
+                  data-precio="180"
+                  data-imagen="https://i.pinimg.com/564x/29/9e/d3/299ed3c110b3e92bbe893ca4316e7027.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+            </div>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Ropa en  destacadas</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/564x/23/2b/40/232b40f85dee96d9d7ab5491e3cca282.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$80</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">camiseta cascade</p>
+                  <button 
+                  class="agregar-carrito" 
+                  data-id="1" 
+                  data-nombre="camiseta cascade" 
+                  data-precio="80"
+                  data-imagen="https://i.pinimg.com/564x/23/2b/40/232b40f85dee96d9d7ab5491e3cca282.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/564x/b4/0d/4a/b40d4af8aa787d4417e92f0fbc824f25.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$40</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">camiseta</p>
+                  <button 
+                  class="agregar-carrito" 
+                  data-id="1" 
+                  data-nombre="camiseta" 
+                  data-precio="50"
+                  data-imagen="https://i.pinimg.com/564x/b4/0d/4a/b40d4af8aa787d4417e92f0fbc824f25.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/control/564x/94/ab/4f/94ab4f67ec49ab93b5f382c6b8b9408b.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$40</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">sudadera de rayas</p>
+                  <button 
+                  class="agregar-carrito" 
+                  data-id="1" 
+                  data-nombre="sudadera de rayas" 
+                  data-precio="50"
+                  data-imagen="https://i.pinimg.com/control/564x/94/ab/4f/94ab4f67ec49ab93b5f382c6b8b9408b.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/control/564x/0d/a1/a6/0da1a6ca67631143ce92109bcc6d14a4.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$200</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">zapatos insanos</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="zapatos insanos " 
+                  data-precio="200"
+                  data-imagen="https://i.pinimg.com/control/564x/0d/a1/a6/0da1a6ca67631143ce92109bcc6d14a4.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/control/564x/51/42/64/514264285a9e287d30d7b7970bf107dd.jpg");'
+                ></div>
+                <div>
+                <p class="text-[#617189] text-sm font-normal leading-normal">$200</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                <p class="text-[#617189] text-sm font-normal leading-normal">zapatos insanos</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="zapatos insanos " 
+                  data-precio="200"
+                  data-imagen="https://i.pinimg.com/control/564x/51/42/64/514264285a9e287d30d7b7970bf107dd.jpg">
+                  Agregar al carrito
+                </button>
+              </div>
+              </div>
+            </div>
+            <h2 class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Tendencias actuales</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/control/564x/dc/e5/dc/dce5dce91ed40c0a075ac2c0c4c5c7d5.jpg");'
+                ></div>
+                <div>
+                  
+                  <p class="text-[#617189] text-sm font-normal leading-normal">$40</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">top</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="top " 
+                  data-precio="40"
+                  data-imagen="https://i.pinimg.com/control/564x/dc/e5/dc/dce5dce91ed40c0a075ac2c0c4c5c7d5.jpg">
+                  Agregar al carrito
+                </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/736x/84/db/62/84db6268da10072a0926d5dc72e84efa.jpg");'
+                ></div>
+                <div>
+           
+                  <p class="text-[#617189] text-sm font-normal leading-normal">$60</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Camisa de comprencion More</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="Camisa de comprencion More " 
+                  data-precio="60"
+                  data-imagen="https://i.pinimg.com/736x/84/db/62/84db6268da10072a0926d5dc72e84efa.jpg">
+                  Agregar al carrito
+                </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/736x/14/20/15/142015bb6b99fb2a800431daf97adde1.jpg");'
+                ></div>
+                <div>
+                  
+                  <p class="text-[#617189] text-sm font-normal leading-normal">$15</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Camisa ST</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="Camisa ST " 
+                  data-precio="15"
+                  data-imagen="https://i.pinimg.com/736x/14/20/15/142015bb6b99fb2a800431daf97adde1.jpg">
+                  Agregar al carrito
+                </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/control/564x/a0/cb/2d/a0cb2d7e54271f27887642f2c2d4b877.jpg");'
+                ></div>
+                <div>
+                 
+                  <p class="text-[#617189] text-sm font-normal leading-normal">$30</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Pantalones cortos</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="Pantalones cortos " 
+                  data-precio="30"
+                  data-imagen="https://i.pinimg.com/control/564x/a0/cb/2d/a0cb2d7e54271f27887642f2c2d4b877.jpg">
+                  Agregar al carrito
+                </button>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                  style='background-image: url("https://i.pinimg.com/564x/f2/da/d6/f2dad65a2ffe5c7f80e809722001e037.jpg");'
+                ></div>
+                <div>
+               
+                  <p class="text-[#617189] text-sm font-normal leading-normal">$45</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Envío gratis</p>
+                  <p class="text-[#617189] text-sm font-normal leading-normal">Sudadera</p>
+                  <button 
+                  data-id="1" 
+                  data-nombre="Sudadera " 
+                  data-precio="45"
+                  data-imagen="https://i.pinimg.com/564x/f2/da/d6/f2dad65a2ffe5c7f80e809722001e037.jpg">
+                  Agregar al carrito
+                </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="carrito.js"></script> <!-- Esto es si usas un archivo JavaScript separado -->
+
+  </body>
+</html>

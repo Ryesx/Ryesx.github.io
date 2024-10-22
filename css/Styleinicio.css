@@ -1,0 +1,156 @@
+body {
+    font-family: "Noto Serif", "Noto Sans", sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111417;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .cart {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 3rem;
+  }
+  
+  .shopping-bag {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    color: #111417;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    border-bottom: 1px solid #dce0e5;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #647587;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
+  
+  .menu .active {
+    border-bottom: 3px solid #111417;
+    color: #111417;
+  }
+  
+  .books {
+    display: flex;
+    padding: 1rem;
+    overflow-x: auto;
+  }
+  
+  .book {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    width: 14rem;
+    margin-right: 1rem;
+  }
+  
+  .book-cover {
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    background-size: cover;
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+  
+  .book-info {
+    padding: 0.75rem;
+  }
+  
+  .book-title {
+    font-size: 1rem;
+    color: #111417;
+    font-weight: medium;
+  }
+  
+  .book-author {
+    font-size: 0.875rem;
+    color: #647587;
+  }
+  
+  .view-all {
+    background-color: #f0f2f4;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #111417;
+  }
+  
+  .new-arrivals,
+  .best-sellers,
+  .deals {
+    padding: 1rem;
+  }
+  
+  .new-arrivals h2,
+  .best-sellers h2,
+  .deals h2 {
+    font-size: 1.375rem;
+    color: #111417;
+    font-weight: bold;
+  }
+  
+  .bottom-menu {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #f0f2f4;
+    background-color: white;
+    padding: 0.5rem 1rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #647587;
+    font-size: 0.75rem;
+  }
+  
+  .menu-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+  }
+  

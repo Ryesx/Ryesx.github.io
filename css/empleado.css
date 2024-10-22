@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: "Noto Serif", "Noto Sans", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  /* Admin Container */
+  .admin-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .admin-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f2f4; /* Cambio a un gris claro */
+    color: #111417;
+  }
+  
+  .admin-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+  
+  /* Navigation */
+  .admin-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9fafb; /* Fondo más claro y suave */
+    padding: 16px;
+  }
+  
+  .admin-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .admin-nav a {
+    text-decoration: none;
+    color: #647587; /* Cambio a un gris oscuro */
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .admin-nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Section */
+  .admin-main {
+    padding: 20px;
+  }
+  
+  .admin-section {
+    margin-bottom: 40px;
+  }
+  
+  .admin-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  
+  .admin-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #111417;
+    background-color: #e0e3e7; /* Color de fondo suave, similar al gris */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #c9cdd1; /* Cambio de hover a un gris más oscuro */
+  }
+  

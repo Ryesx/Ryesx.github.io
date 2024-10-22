@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Serif%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      /* Estilo para la ventana modal */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+      }
+
+      .close {
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      /* Estilos adicionales */
+      #loginForm {
+        display: none;
+        margin-top: 20px;
+      }
+
+      .main-container {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .header {
+        background-color: #f8f8f8;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-size: 24px;
+      }
+
+      .main-heading {
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+
+      .sub-heading {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .btn, .btn-alt {
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      .btn-alt {
+        background-color: #28a745;
+      }
+
+      .terms {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <h2 class="title">shein</h2>
+      </header>
+
+      <div>
+        <h1 class="main-heading">Continuar para registrarse gratis</h1>
+        <p class="sub-heading">Si ya tienes una cuenta, inicia sesión automáticamente.</p>
+        
+        <!-- Botones de inicio de sesión -->
+        <div class="button-container">
+          <button class="btn" onclick="openModal('modalApple')">Continuar con Apple</button>
+          <button class="btn" onclick="openModal('modalGoogle')">Continuar con Google</button>
+          <button class="btn" onclick="openModal('modalFacebook')">Continuar con Facebook</button>
+          <button class="btn-alt" onclick="openModal('modalOther')">Continuar de otra manera</button>
+        </div>
+
+        <p class="terms">Al continuar, aceptas los Términos de Uso. Lee nuestra Política de Privacidad.</p>
+      </div>
+
+      <!-- Ventanas modales -->
+      <div id="modalApple" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modalApple')">&times;</span>
+          <h2>Iniciar Sesión con Apple</h2>
+          <form  method="POST" action="login.php">
+            <div>
+              <label for="apple-username">Usuario Apple</label>
+              <input type="text" id="apple-username" required />
+            </div>
+            <div>
+              <label for="apple-password">Contraseña</label>
+              <input type="password" id="apple-password" required />
+            </div>
+            <button type="button" onclick="window.location.href='index.html';">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="modalGoogle" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modalGoogle')">&times;</span>
+          <h2>Iniciar Sesión con Google</h2>
+          <form method="POST" action="login.php">
+            <div>
+              <label for="google-username">Usuario Google</label>
+              <input type="text" id="google-username" required />
+            </div>
+            <div>
+              <label for="google-password">Contraseña</label>
+              <input type="password" id="google-password" required />
+            </div>
+            <button type="button" onclick="window.location.href='index.html';">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="modalFacebook" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modalFacebook')">&times;</span>
+          <h2>Iniciar Sesión con Facebook</h2>
+          <form method="POST" action="login.php">
+            <div>
+              <label for="facebook-username">Usuario Facebook</label>
+              <input type="text" id="facebook-username" required />
+            </div>
+            <div>
+              <label for="facebook-password">Contraseña</label>
+              <input type="password" id="facebook-password" required />
+            </div>
+            <button type="button" onclick="window.location.href='index.html';">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="modalOther" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modalOther')">&times;</span>
+          <h2>Iniciar Sesión de Otra Manera</h2>
+          <form method="POST" action="login.php">
+            <div>
+              <label for="other-username">Usuario</label>
+              <input type="text" id="other-username" required />
+            </div>
+            <div>
+              <label for="other-password">Contraseña</label>
+              <input type="password" id="other-password" required />
+            </div>
+            <button type="button" onclick="window.location.href='index.html';">Iniciar Sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Función para abrir la ventana modal
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+      }
+
+      // Función para cerrar la ventana modal
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+      }
+    </script>
+  </body>
+</html>
